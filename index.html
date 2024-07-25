@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="main">
+  <div class="main__items">
+    <div class="items__head">
+      <h1 class="items__heading">Desserts</h1>
+    </div>
+    <div class="items__items">
+      
+    </div>
+  </div>
+  <div class="main__order">
+    <h2 class="order__head">Your Cart (<span class="order__count">0</span>)</h2>
+    <div class="order__image">
+      <img src="./assets/images/illustration-empty-cart.svg" alt="order-img">
+    </div>
+    <div class="order__des">Your added items will appear here</div> 
+    <div class="order__items"></div>
+    <div class="order__total-section" style="display: none;">
+      <div class="order__total">
+        <div class="order__total-l">Order Total:</div>
+        <div class="total__price">$0.00</div> </div>
+    <div class="order__carboon">
+      <div class="carbon__img">
+        <img src="./assets/images/icon-carbon-neutral.svg" alt="tree">
+      </div>
+      <p>This is a <span>carbon-neutral</span> delivery</p>
+    </div>
+      <button class="confirm__order">Confirm Order</button>
+    </div>
+
+  </div>
+  
+    
+
+  </div>
+  <!-- Order Confirmation Modal -->
+<div id="order-modal" class="order-modal" style="display: none;">
+  <div class="order-modal-content">
+    <div class="modal__lef">
+    <img src="./assets/images/icon-order-confirmed.svg" alt="">
+    <h2>Order Confirmed!</h2>
+    <p>We hope you enjoy your food.</p>
+  </div>
+  <div class="modal-background">
+    <div class="order-details">
+      <!-- Order details will be dynamically inserted here -->
+    </div>
+    <div class="order-total total-modal">
+      Order Total: <span class="total__price">$0.00</span>
+    </div></div>
+    <button id="start-new-order" class="start-new-order">Start New Order</button>
+  </div>
+</div>
+
+  
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
